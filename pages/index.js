@@ -101,7 +101,7 @@ const Home = (props) => {
             </div>
           </div>
         </section>
-        <section className="services-section">
+        <section id="services" className="services-section">
           <div className="services-container">
             <div className="services-header">
               <h2 className="section-title">Signature Services</h2>

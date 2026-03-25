@@ -34,7 +34,7 @@ const Navigation = (props) => {
                 >
                   <div className="navigation-thq-navigation-logo-icon-elm1 navigation-logo-icon">
                     <img
-                      alt="image"
+                      alt="GoShine Auto Detailing Logo"
                       src="/company-logo-transparent-200h.webp"
                       className="navigation-image"
                     />
@@ -46,31 +46,61 @@ const Navigation = (props) => {
               <Link href="/">
                 <a>
                   <div className="navigation-link">
-                    <span>Services</span>
-                  </div>
-                </a>
-              </Link>
-              <Link href="/">
-                <a>
-                  <div className="navigation-link">
                     <span>Gallery</span>
                   </div>
                 </a>
               </Link>
-              <Link href="/">
-                <a>
-                  <div className="navigation-link">
-                    <span>Pricing</span>
-                  </div>
-                </a>
-              </Link>
-              <Link href="/">
-                <a>
-                  <div className="navigation-link">
-                    <span>About</span>
-                  </div>
-                </a>
-              </Link>
+              <div className="navigation-dropdown">
+                <button
+                  aria-label="Services menu"
+                  aria-expanded="false"
+                  aria-haspopup="true"
+                  className="button navigation-dropdown-trigger navigation-link"
+                >
+                  <span>Services</span>
+                  <svg
+                    fill="none"
+                    width="12"
+                    height="12"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    className="navigation-thq-navigation-dropdown-icon-elm"
+                  >
+                    <path d="M6 9l6 6 6-6"></path>
+                  </svg>
+                </button>
+                <div role="menu" className="navigation-dropdown-menu">
+                  <Link href="/exterior-services">
+                    <a>
+                      <div role="menuitem" className="navigation-dropdown-item">
+                        <span>Exterior Services</span>
+                      </div>
+                    </a>
+                  </Link>
+                  <Link href="/interior-services">
+                    <a>
+                      <div role="menuitem" className="navigation-dropdown-item">
+                        <span>Interior Services</span>
+                      </div>
+                    </a>
+                  </Link>
+                  <Link href="/full-detail">
+                    <a>
+                      <div role="menuitem" className="navigation-dropdown-item">
+                        <span>Full Detail</span>
+                      </div>
+                    </a>
+                  </Link>
+                </div>
+              </div>
+              <a href="#services">
+                <div className="navigation-thq-navigation-link-elm3 navigation-link">
+                  <span>Pricing</span>
+                </div>
+              </a>
               <Link href="/booking">
                 <a>
                   <div className="btn btn-sm btn-primary">
@@ -78,48 +108,6 @@ const Navigation = (props) => {
                   </div>
                 </a>
               </Link>
-              <div data-thq="thq-dropdown" className="navigation-thq-dropdown1">
-                <div
-                  data-thq="thq-dropdown-toggle"
-                  className="navigation-thq-dropdown-toggle1"
-                >
-                  <span>More</span>
-                  <div
-                    data-thq="thq-dropdown-arrow"
-                    className="navigation-thq-dropdown-arrow1"
-                  >
-                    <svg viewBox="0 0 1024 1024" className="navigation-icon10">
-                      <path d="M426 726v-428l214 214z"></path>
-                    </svg>
-                  </div>
-                </div>
-                <ul
-                  data-thq="thq-dropdown-list"
-                  className="navigation-thq-dropdown-list1"
-                >
-                  <Link href="/exterior-services">
-                    <a>
-                      <div className="navigation-link">
-                        <span>Exterior Services</span>
-                      </div>
-                    </a>
-                  </Link>
-                  <Link href="/interior-services">
-                    <a>
-                      <div className="navigation-link">
-                        <span>Interior Services</span>
-                      </div>
-                    </a>
-                  </Link>
-                  <Link href="/full-detail">
-                    <a>
-                      <div className="navigation-link">
-                        <span>Full Detail</span>
-                      </div>
-                    </a>
-                  </Link>
-                </ul>
-              </div>
             </div>
             <button
               id="navigationMobileToggle"
@@ -153,25 +141,11 @@ const Navigation = (props) => {
               <a>
                 <div className="navigation-logo-link">
                   <div className="navigation-logo-icon">
-                    <svg
-                      width="24"
-                      xmlns="http://www.w3.org/2000/svg"
-                      height="24"
-                      viewBox="0 0 24 24"
-                    >
-                      <g
-                        fill="none"
-                        stroke="currentColor"
-                        strokeWidth="2"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                      >
-                        <path d="M19 17h2c.6 0 1-.4 1-1v-3c0-.9-.7-1.7-1.5-1.9C18.7 10.6 16 10 16 10s-1.3-1.4-2.2-2.3c-.5-.4-1.1-.7-1.8-.7H5c-.6 0-1.1.4-1.4.9l-1.4 2.9A3.7 3.7 0 0 0 2 12v4c0 .6.4 1 1 1h2"></path>
-                        <circle r="2" cx="7" cy="17"></circle>
-                        <path d="M9 17h6"></path>
-                        <circle r="2" cx="17" cy="17"></circle>
-                      </g>
-                    </svg>
+                    <img
+                      alt="GoShine Auto Detailing Logo"
+                      src="/company-logo-transparent-200h.webp"
+                      className="navigation-thq-image-elm"
+                    />
                   </div>
                 </div>
               </a>
@@ -203,31 +177,15 @@ const Navigation = (props) => {
               <Link href="/">
                 <a>
                   <div className="navigation-mobile-link">
-                    <span>Services</span>
-                  </div>
-                </a>
-              </Link>
-              <Link href="/">
-                <a>
-                  <div className="navigation-mobile-link">
                     <span>Gallery</span>
                   </div>
                 </a>
               </Link>
-              <Link href="/">
-                <a>
-                  <div className="navigation-mobile-link">
-                    <span>Pricing</span>
-                  </div>
-                </a>
-              </Link>
-              <Link href="/">
-                <a>
-                  <div className="navigation-mobile-link">
-                    <span>About</span>
-                  </div>
-                </a>
-              </Link>
+              <a href="#services">
+                <div className="navigation-thq-navigation-mobile-link-elm2 navigation-mobile-link">
+                  <span>Pricing</span>
+                </div>
+              </a>
               <Link href="/booking">
                 <a>
                   <div className="navigation-mobile-link">
@@ -235,25 +193,23 @@ const Navigation = (props) => {
                   </div>
                 </a>
               </Link>
-              <div data-thq="thq-dropdown" className="navigation-thq-dropdown2">
+              <div data-thq="thq-dropdown" className="thq-dropdown">
                 <div
                   data-thq="thq-dropdown-toggle"
-                  className="navigation-thq-dropdown-toggle2"
+                  aria-expanded="false"
+                  className="thq-dropdown-toggle"
                 >
-                  <span>More</span>
+                  <span>Services</span>
                   <div
                     data-thq="thq-dropdown-arrow"
-                    className="navigation-thq-dropdown-arrow2"
+                    className="navigation-thq-dropdown-arrow"
                   >
-                    <svg viewBox="0 0 1024 1024" className="navigation-icon21">
+                    <svg viewBox="0 0 1024 1024" className="navigation-icon5">
                       <path d="M426 726v-428l214 214z"></path>
                     </svg>
                   </div>
                 </div>
-                <ul
-                  data-thq="thq-dropdown-list"
-                  className="navigation-thq-dropdown-list2"
-                >
+                <ul data-thq="thq-dropdown-list" className="thq-dropdown-list">
                   <Link href="/exterior-services">
                     <a>
                       <div className="navigation-mobile-link">
@@ -307,40 +263,55 @@ transform: translateY(0);}}
         <div className="navigation-container6">
           <div className="navigation-container7">
             <Script
-              html={`<script defer data-name="navigation-logic">
-(function(){
-  const mobileToggle = document.getElementById("navigationMobileToggle")
-  const mobileOverlay = document.getElementById("navigationMobileOverlay")
-  const mobileClose = document.getElementById("navigationMobileClose")
-  const mobileLinks = document.querySelectorAll(".navigation-mobile-link")
+              html={`<script>
+        ;(function () {
+          const mobileToggle = document.getElementById("navigationMobileToggle")
+          const mobileOverlay = document.getElementById("navigationMobileOverlay")
+          const mobileClose = document.getElementById("navigationMobileClose")
+          const mobileLinks = document.querySelectorAll(".navigation-mobile-link")
+          const dropdownToggle = document.querySelector('[data-thq="thq-dropdown-toggle"]')
+          const dropdown = document.querySelector('[data-thq="thq-dropdown"]')
+          const dropdownArrow = document.querySelector('[data-thq="thq-dropdown-arrow"]')
 
-  function openMenu() {
-    mobileOverlay.classList.add("is-active")
-    mobileToggle.setAttribute("aria-expanded", "true")
-    document.body.style.overflow = "hidden"
-  }
+          function openMenu() {
+            mobileOverlay.classList.add("is-active")
+            mobileToggle.setAttribute("aria-expanded", "true")
+            document.body.style.overflow = "hidden"
+          }
+          function closeMenu() {
+            mobileOverlay.classList.remove("is-active")
+            mobileToggle.setAttribute("aria-expanded", "false")
+            document.body.style.overflow = ""
+          }
 
-  function closeMenu() {
-    mobileOverlay.classList.remove("is-active")
-    mobileToggle.setAttribute("aria-expanded", "false")
-    document.body.style.overflow = ""
-  }
+          // Dropdown toggle functionality
+          if (dropdownToggle && dropdown) {
+            dropdownToggle.addEventListener("click", (e) => {
+              e.preventDefault()
+              const isOpen = dropdown.getAttribute("data-thq-state") === "open"
+              if (isOpen) {
+                dropdown.setAttribute("data-thq-state", "closed")
+                if (dropdownArrow) dropdownArrow.style.transform = "rotate(0deg)"
+              } else {
+                dropdown.setAttribute("data-thq-state", "open")
+                if (dropdownArrow) dropdownArrow.style.transform = "rotate(90deg)"
+              }
+            })
+          }
 
-  mobileToggle.addEventListener("click", openMenu)
-  mobileClose.addEventListener("click", closeMenu)
-
-  mobileLinks.forEach((link) => {
-    link.addEventListener("click", closeMenu)
-  })
-
-  // Close on escape key
-  document.addEventListener("keydown", (e) => {
-    if (e.key === "Escape" && mobileOverlay.classList.contains("is-active")) {
-      closeMenu()
-    }
-  })
-})()
-</script>`}
+          mobileToggle.addEventListener("click", openMenu)
+          mobileClose.addEventListener("click", closeMenu)
+          mobileLinks.forEach((link) => {
+            link.addEventListener("click", closeMenu)
+          })
+          // Close on escape key
+          document.addEventListener("keydown", (e) => {
+            if (e.key === "Escape" && mobileOverlay.classList.contains("is-active")) {
+              closeMenu()
+            }
+          })
+        })()
+      </script>`}
             ></Script>
           </div>
         </div>
@@ -357,72 +328,45 @@ transform: translateY(0);}}
             display: contents;
           }
           .navigation-thq-navigation-logo-icon-elm1 {
+            height: 100%;
+            display: flex;
             align-items: center;
             justify-content: center;
           }
           .navigation-image {
-            width: 200px;
-            object-fit: cover;
+            width: auto;
+            height: auto;
+            display: block;
+            max-width: 220px;
+            max-height: 200px;
+            object-fit: contain;
+            image-rendering: auto;
           }
-          .navigation-thq-dropdown1 {
-            cursor: pointer;
-            display: inline-block;
-            padding: 4px 8px;
-            position: relative;
-            border-color: rgba(0, 0, 0, 0.45);
-            border-style: solid;
-            border-width: 1px;
-            border-radius: 4px;
+          .navigation-thq-navigation-dropdown-icon-elm {
+            transition: transform 0.2s ease;
           }
-          .navigation-thq-dropdown-toggle1 {
-            gap: 4px;
-            display: inline-flex;
-            align-items: center;
+          .navigation-thq-navigation-link-elm3 {
+            text-decoration: none;
           }
-          .navigation-thq-dropdown-arrow1 {
+          .navigation-thq-image-elm {
+            width: auto;
+            height: auto;
+            display: block;
+            max-width: 220px;
+            max-height: 200px;
+            object-fit: contain;
+            image-rendering: auto;
+          }
+          .navigation-thq-navigation-mobile-link-elm2 {
+            text-decoration: none;
+          }
+          .navigation-thq-dropdown-arrow {
             transition: 0.3s;
           }
-          .navigation-icon10 {
-            width: 18px;
-            height: 18px;
-          }
-          .navigation-thq-dropdown-list1 {
-            display: none;
-            z-index: 100;
-            position: absolute;
-            min-width: 100%;
-            flex-direction: column;
-            list-style-type: none;
-          }
-          .navigation-thq-dropdown2 {
-            cursor: pointer;
-            display: inline-block;
-            padding: 4px 8px;
-            position: relative;
-            border-color: rgba(0, 0, 0, 0.45);
-            border-style: solid;
-            border-width: 1px;
-            border-radius: 4px;
-          }
-          .navigation-thq-dropdown-toggle2 {
-            gap: 4px;
-            display: inline-flex;
-            align-items: center;
-          }
-          .navigation-thq-dropdown-arrow2 {
-            transition: 0.3s;
-          }
-          .navigation-icon21 {
-            width: 18px;
-            height: 18px;
-          }
-          .navigation-thq-dropdown-list2 {
-            display: none;
-            z-index: 100;
-            position: absolute;
-            min-width: 100%;
-            flex-direction: column;
-            list-style-type: none;
+          .navigation-icon5 {
+            fill: currentColor;
+            width: 24px;
+            height: 24px;
           }
           .navigation-container4 {
             display: none;
@@ -438,7 +382,58 @@ transform: translateY(0);}}
           }
           @media (max-width: 1600px) {
             .navigation-image {
+              max-width: 200px;
+              max-height: 200px;
+            }
+            .navigation-thq-image-elm {
+              max-width: 200px;
+              max-height: 200px;
+            }
+          }
+          @media (max-width: 1200px) {
+            .navigation-image {
+              max-width: 175px;
+              max-height: 200px;
+            }
+            .navigation-thq-image-elm {
+              max-width: 175px;
+              max-height: 200px;
+            }
+          }
+          @media (max-width: 991px) {
+            .navigation-image {
+              max-width: 175px;
+              max-height: 200px;
+            }
+            .navigation-thq-image-elm {
+              max-width: 175px;
+              max-height: 200px;
+            }
+          }
+          @media (max-width: 767px) {
+            .navigation-image {
+              max-width: 175px;
+              max-height: 200px;
+            }
+            .navigation-thq-image-elm {
+              max-width: 175px;
+              max-height: 200px;
+            }
+          }
+          @media (max-width: 479px) {
+            .navigation-image {
+              width: 301px;
+              height: 344px;
+              max-width: 175px;
               align-self: center;
+              max-height: 200px;
+            }
+            .navigation-thq-image-elm {
+              width: 301px;
+              height: 344px;
+              max-width: 175px;
+              align-self: center;
+              max-height: 200px;
             }
           }
         `}
