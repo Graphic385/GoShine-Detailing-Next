@@ -94,6 +94,13 @@ const Navigation = (props) => {
                       </div>
                     </a>
                   </Link>
+                  <Link href="/gallery">
+                    <a>
+                      <div role="menuitem" className="navigation-dropdown-item">
+                        <span>Gallery</span>
+                      </div>
+                    </a>
+                  </Link>
                 </div>
               </div>
               <a href="#services">
@@ -204,7 +211,7 @@ const Navigation = (props) => {
                     data-thq="thq-dropdown-arrow"
                     className="navigation-thq-dropdown-arrow"
                   >
-                    <svg viewBox="0 0 1024 1024" className="navigation-icon5">
+                    <svg viewBox="0 0 1024 1024" className="navigation-icon14">
                       <path d="M426 726v-428l214 214z"></path>
                     </svg>
                   </div>
@@ -231,6 +238,13 @@ const Navigation = (props) => {
                       </div>
                     </a>
                   </Link>
+                  <Link href="/gallery">
+                    <a>
+                      <div className="navigation-mobile-link">
+                        <span>Gallery</span>
+                      </div>
+                    </a>
+                  </Link>
                 </ul>
               </div>
             </div>
@@ -238,6 +252,98 @@ const Navigation = (props) => {
               <p className="navigation-mobile-location">
                 Richmond Hill • Vaughan • Thornhill
               </p>
+              <div className="navigation-thq-navigation-mobile-contact-elm">
+                <a href="tel:6473814226" className="navigation-link26">
+                  <div className="navigation-mobile-contact-link">
+                    <svg
+                      fill="none"
+                      width="18"
+                      height="18"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                      strokeWidth="2"
+                    >
+                      <path
+                        d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      ></path>
+                      <circle r="3" cx="12" cy="10"></circle>
+                    </svg>
+                    <span>647 381 4226</span>
+                  </div>
+                </a>
+                <a
+                  href="mailto:goshineautocanada@gmail.com?subject="
+                  className="navigation-link27"
+                >
+                  <div className="navigation-mobile-contact-link">
+                    <svg
+                      fill="none"
+                      width="18"
+                      height="18"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                      strokeWidth="2"
+                    >
+                      <path
+                        d="m22 7l-8.991 5.727a2 2 0 0 1-2.009 0L2 7"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      ></path>
+                      <rect
+                        x="2"
+                        y="4"
+                        rx="2"
+                        width="20"
+                        height="16"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      ></rect>
+                    </svg>
+                    <span>goshineautocanada@gmail.com</span>
+                  </div>
+                </a>
+                <a
+                  href="https://www.instagram.com/goshineautos/"
+                  className="navigation-link28"
+                >
+                  <div className="navigation-mobile-contact-link">
+                    <svg
+                      fill="none"
+                      width="18"
+                      height="18"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                      strokeWidth="2"
+                    >
+                      <rect
+                        x="2"
+                        y="2"
+                        rx="5"
+                        width="20"
+                        height="20"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      ></rect>
+                      <path
+                        d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      ></path>
+                      <line
+                        x1="17.5"
+                        x2="17.51"
+                        y1="6.5"
+                        y2="6.5"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      ></line>
+                    </svg>
+                    <span>@goshineautos</span>
+                  </div>
+                </a>
+              </div>
               <Link href="/booking">
                 <a>
                   <div className="btn-lg btn btn-primary navigation-mobile-cta">
@@ -363,10 +469,28 @@ transform: translateY(0);}}
           .navigation-thq-dropdown-arrow {
             transition: 0.3s;
           }
-          .navigation-icon5 {
+          .navigation-icon14 {
             fill: currentColor;
             width: 24px;
             height: 24px;
+          }
+          .navigation-thq-navigation-mobile-contact-elm {
+            gap: var(--spacing-sm);
+            margin: var(--spacing-md) 0;
+            display: flex;
+            padding: var(--spacing-md) 0;
+            border-top: 1px solid var(--color-border);
+            border-bottom: 1px solid var(--color-border);
+            flex-direction: column;
+          }
+          .navigation-link26 {
+            display: contents;
+          }
+          .navigation-link27 {
+            display: contents;
+          }
+          .navigation-link28 {
+            display: contents;
           }
           .navigation-container4 {
             display: none;
@@ -420,7 +544,7 @@ transform: translateY(0);}}
               max-height: 200px;
             }
           }
-          @media (max-width: 479px) {
+          @media (max-width: 390px) {
             .navigation-image {
               width: 301px;
               height: 344px;

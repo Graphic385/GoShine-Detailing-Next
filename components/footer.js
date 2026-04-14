@@ -2,12 +2,13 @@ import React from 'react'
 import Link from 'next/link'
 
 import Script from 'dangerous-html/react'
+import PropTypes from 'prop-types'
 import { useTranslations } from 'next-intl'
 
 const Footer = (props) => {
   return (
     <>
-      <div className="footer-container1">
+      <div className={`footer-container1 ${props.rootClassName} `}>
         <footer className="footer-root">
           <div className="footer-container">
             <div className="footer-grid">
@@ -22,8 +23,11 @@ const Footer = (props) => {
                   doorstep with professional care and attention to detail.
                 </p>
                 <div className="footer-social-links">
-                  <a href="#">
-                    <div aria-label="Instagram" className="footer-social-icon">
+                  <a href="https://www.instagram.com/goshineautos/">
+                    <div
+                      aria-label="Instagram"
+                      className="footer-thq-footer-social-icon-elm footer-social-icon"
+                    >
                       <svg
                         width="24"
                         xmlns="http://www.w3.org/2000/svg"
@@ -50,25 +54,6 @@ const Footer = (props) => {
                       </svg>
                     </div>
                   </a>
-                  <a href="#">
-                    <div aria-label="Facebook" className="footer-social-icon">
-                      <svg
-                        width="24"
-                        xmlns="http://www.w3.org/2000/svg"
-                        height="24"
-                        viewBox="0 0 24 24"
-                      >
-                        <path
-                          d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"
-                          fill="none"
-                          stroke="currentColor"
-                          strokeWidth="2"
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                        ></path>
-                      </svg>
-                    </div>
-                  </a>
                 </div>
               </div>
               <div className="footer-column footer-links-col">
@@ -78,17 +63,28 @@ const Footer = (props) => {
                 <nav className="footer-nav">
                   <ul className="footer-link-list">
                     <li>
-                      <a href="Homepage">
-                        <div className="footer-link">
-                          <span>Home</span>
-                        </div>
-                      </a>
+                      <Link href="/">
+                        <a>
+                          <div className="footer-thq-footer-link-elm1 footer-link">
+                            <span>Home</span>
+                          </div>
+                        </a>
+                      </Link>
                     </li>
                     <Link href="/booking">
                       <a>
                         <li>
                           <div className="footer-link">
                             <span>Booking</span>
+                          </div>
+                        </li>
+                      </a>
+                    </Link>
+                    <Link href="/gallery">
+                      <a>
+                        <li>
+                          <div className="footer-link">
+                            <span>Gallery</span>
                           </div>
                         </li>
                       </a>
@@ -107,20 +103,7 @@ const Footer = (props) => {
                         </div>
                       </a>
                     </li>
-                    <li>
-                      <a href="#booking">
-                        <div className="footer-link">
-                          <span>Book Appointment</span>
-                        </div>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#faq">
-                        <div className="footer-link">
-                          <span>Common Questions</span>
-                        </div>
-                      </a>
-                    </li>
+                    <li></li>
                   </ul>
                 </nav>
               </div>
@@ -171,9 +154,9 @@ const Footer = (props) => {
                         ></path>
                       </svg>
                     </div>
-                    <a href="tel:1234567890">
+                    <a href="tel:6473814226">
                       <div className="footer-link">
-                        <span>(123) 456-7890</span>
+                        <span>647-381-4226</span>
                       </div>
                     </a>
                   </div>
@@ -203,9 +186,9 @@ const Footer = (props) => {
                         </g>
                       </svg>
                     </div>
-                    <a href="mailto:info@goshineauto.ca?subject=">
+                    <a href="mailto:goshineautocanada@gmail.com?subject=">
                       <div className="footer-link">
-                        <span>info@goshineauto.ca</span>
+                        <span>goshineautocanada@gmail.com</span>
                       </div>
                     </a>
                   </div>
@@ -281,28 +264,17 @@ const Footer = (props) => {
             ></Script>
           </div>
         </div>
-        <nav className="footer-thq-navlinks-elm">
-          <Link href="/">
-            <a>Home</a>
-          </Link>
-          <Link href="/booking">
-            <a>Booking</a>
-          </Link>
-          <Link href="/exterior-services">
-            <a>Exterior Services</a>
-          </Link>
-          <Link href="/interior-services">
-            <a>Interior Services</a>
-          </Link>
-          <Link href="/full-detail">
-            <a>Full Detail</a>
-          </Link>
-        </nav>
       </div>
       <style jsx>
         {`
           .footer-container1 {
             display: contents;
+          }
+          .footer-thq-footer-social-icon-elm {
+            text-decoration: none;
+          }
+          .footer-thq-footer-link-elm1 {
+            text-decoration: none;
           }
           .footer-thq-btn-elm {
             text-decoration: none;
@@ -313,15 +285,24 @@ const Footer = (props) => {
           .footer-container3 {
             display: contents;
           }
-          .footer-thq-navlinks-elm {
-            gap: 16px;
-            display: flex;
-            align-items: center;
+
+          @media (max-width: 1600px) {
+            .footer-container2 {
+              display: flex;
+            }
           }
         `}
       </style>
     </>
   )
+}
+
+Footer.defaultProps = {
+  rootClassName: '',
+}
+
+Footer.propTypes = {
+  rootClassName: PropTypes.string,
 }
 
 export default Footer

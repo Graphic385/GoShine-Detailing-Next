@@ -31,7 +31,7 @@ const InteriorServices = (props) => {
           />
           <meta
             property="og:image"
-            content="https://aheioqhobo.cloudimg.io/v7/_playground-bucket-v2.teleporthq.io_/47fea3ae-00a5-467c-adc6-4e360d4fc31c/9500b003-5b5c-4bd1-be26-4af716f42c86?org_if_sml=1&amp;force_format=original"
+            content="https://aheioqhobo.cloudimg.io/v7/_playground-bucket-v2.teleporthq.io_/47fea3ae-00a5-467c-adc6-4e360d4fc31c/04848f42-fbeb-46ce-a38a-34dc739a299a?org_if_sml=1&amp;force_format=original"
           />
           <link
             rel="canonical"
@@ -194,8 +194,7 @@ const InteriorServices = (props) => {
                         ></path>
                       </svg>
                       <span className="section-content">
-                        Light Spot Cleaning: Surface-level scuffs and minor
-                        spills
+                        Light Spot Cleaning: Surface-level scuffs 
                       </span>
                     </li>
                     <li className="service-card__item">
@@ -271,8 +270,11 @@ const InteriorServices = (props) => {
                         ></path>
                       </svg>
                       <span className="section-content">
-                        Deep Carpet &amp; Mat Shampoo: Complete stain removal
-                        and extraction
+                        <span>
+                          Deep Carpet &amp; Mat Scrub: Intensive scrub to lift
+                          and remove deep-seated dirt for a refreshed finish.
+                        </span>
+                        <br></br>
                       </span>
                     </li>
                     <li className="service-card__item">

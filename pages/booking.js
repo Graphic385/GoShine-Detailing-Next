@@ -29,7 +29,7 @@ const Booking = (props) => {
           />
           <meta
             property="og:image"
-            content="https://aheioqhobo.cloudimg.io/v7/_playground-bucket-v2.teleporthq.io_/47fea3ae-00a5-467c-adc6-4e360d4fc31c/9500b003-5b5c-4bd1-be26-4af716f42c86?org_if_sml=1&amp;force_format=original"
+            content="https://aheioqhobo.cloudimg.io/v7/_playground-bucket-v2.teleporthq.io_/47fea3ae-00a5-467c-adc6-4e360d4fc31c/04848f42-fbeb-46ce-a38a-34dc739a299a?org_if_sml=1&amp;force_format=original"
           />
           <link
             rel="canonical"
@@ -41,34 +41,6 @@ const Booking = (props) => {
           />
         </Head>
         <Navigation></Navigation>
-        <header className="header-minimal">
-          <div className="header-container">
-            <div className="header-logo">
-              <div className="logo-icon-wrapper">
-                <svg
-                  width="24"
-                  xmlns="http://www.w3.org/2000/svg"
-                  height="24"
-                  viewBox="0 0 24 24"
-                >
-                  <g
-                    fill="none"
-                    stroke="currentColor"
-                    strokeWidth="2"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  >
-                    <path d="M19 17h2c.6 0 1-.4 1-1v-3c0-.9-.7-1.7-1.5-1.9C18.7 10.6 16 10 16 10s-1.3-1.4-2.2-2.3c-.5-.4-1.1-.7-1.8-.7H5c-.6 0-1.1.4-1.4.9l-1.4 2.9A3.7 3.7 0 0 0 2 12v4c0 .6.4 1 1 1h2"></path>
-                    <circle r="2" cx="7" cy="17"></circle>
-                    <path d="M9 17h6"></path>
-                    <circle r="2" cx="17" cy="17"></circle>
-                  </g>
-                </svg>
-              </div>
-              <span className="logo-text">GoShine Auto Detailing</span>
-            </div>
-          </div>
-        </header>
         <section className="booking-section">
           <div className="booking-container">
             <div className="booking-header">
@@ -77,6 +49,89 @@ const Booking = (props) => {
                 Premium mobile detailing at your doorstep in Richmond Hill,
                 Vaughan, and Thornhill.
               </p>
+            </div>
+            <div className="booking-thq-booking-contact-block-elm">
+              <p className="booking-thq-booking-contact-heading-elm">
+                Prefer to message?
+              </p>
+              <div className="booking-thq-booking-contact-options-elm">
+                <a href="tel:6473814226" className="booking-link1">
+                  <div className="booking-contact-link">
+                    <svg
+                      width="20"
+                      xmlns="http://www.w3.org/2000/svg"
+                      height="20"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233a14 14 0 0 0 6.392 6.384"
+                        fill="none"
+                        stroke="currentColor"
+                        strokeWidth="2"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      ></path>
+                    </svg>
+                    <span>647-381-4226</span>
+                  </div>
+                </a>
+                <a
+                  href="mailto:goshineautocanada@gmail.com?subject="
+                  className="booking-link2"
+                >
+                  <div className="booking-contact-link">
+                    <svg
+                      width="20"
+                      xmlns="http://www.w3.org/2000/svg"
+                      height="20"
+                      viewBox="0 0 24 24"
+                    >
+                      <g
+                        fill="none"
+                        stroke="currentColor"
+                        strokeWidth="2"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      >
+                        <path d="m22 7l-8.991 5.727a2 2 0 0 1-2.009 0L2 7"></path>
+                        <rect x="2" y="4" rx="2" width="20" height="16"></rect>
+                      </g>
+                    </svg>
+                    <span>goshineautocanada@gmail.com</span>
+                  </div>
+                </a>
+                <a
+                  href="https://www.instagram.com/goshineautos/"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  className="booking-link3"
+                >
+                  <div
+                    rel="noopener noreferrer"
+                    target="_blank"
+                    className="booking-contact-link"
+                  >
+                    <svg
+                      width="20"
+                      xmlns="http://www.w3.org/2000/svg"
+                      height="20"
+                      viewBox="0 0 24 24"
+                    >
+                      <g
+                        fill="none"
+                        stroke="currentColor"
+                        strokeWidth="2"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      >
+                        <path d="M4 8a4 4 0 0 1 4-4h8a4 4 0 0 1 4 4v8a4 4 0 0 1-4 4H8a4 4 0 0 1-4-4z"></path>
+                        <path d="M9 12a3 3 0 1 0 6 0a3 3 0 0 0-6 0m7.5-4.5v.01"></path>
+                      </g>
+                    </svg>
+                    <span>@goshineautos</span>
+                  </div>
+                </a>
+              </div>
             </div>
             <div className="booking-form-wrapper">
               <iframe
@@ -137,6 +192,41 @@ window.addEventListener('message', (e) => {
             width: 100%;
             min-height: 100vh;
           }
+          .booking-thq-booking-contact-block-elm {
+            gap: var(--spacing-sm);
+            border: 1px solid var(--color-border);
+            margin: 0 auto;
+            display: flex;
+            padding: var(--spacing-md) var(--spacing-lg);
+            max-width: 800px;
+            align-items: center;
+            border-radius: var(--border-radius-lg);
+            flex-direction: column;
+            background-color: var(--color-surface-elevated);
+          }
+          .booking-thq-booking-contact-heading-elm {
+            color: var(--color-on-surface-secondary);
+            margin: 0;
+            font-size: var(--font-size-sm);
+            font-weight: var(--font-weight-medium);
+            letter-spacing: var(--letter-spacing-heading);
+            text-transform: uppercase;
+          }
+          .booking-thq-booking-contact-options-elm {
+            gap: var(--spacing-md) var(--spacing-xl);
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+          }
+          .booking-link1 {
+            display: contents;
+          }
+          .booking-link2 {
+            display: contents;
+          }
+          .booking-link3 {
+            display: contents;
+          }
           .booking-container2 {
             display: none;
           }
@@ -148,6 +238,15 @@ window.addEventListener('message', (e) => {
           }
           .booking-container5 {
             display: contents;
+          }
+          @media (max-width: 767px) {
+            .booking-thq-booking-contact-block-elm {
+              padding: var(--spacing-sm) var(--spacing-md);
+            }
+            .booking-thq-booking-contact-options-elm {
+              gap: var(--spacing-sm);
+              flex-direction: column;
+            }
           }
         `}
       </style>

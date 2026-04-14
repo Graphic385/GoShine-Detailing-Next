@@ -31,7 +31,7 @@ const ExteriorServices = (props) => {
           />
           <meta
             property="og:image"
-            content="https://aheioqhobo.cloudimg.io/v7/_playground-bucket-v2.teleporthq.io_/47fea3ae-00a5-467c-adc6-4e360d4fc31c/9500b003-5b5c-4bd1-be26-4af716f42c86?org_if_sml=1&amp;force_format=original"
+            content="https://aheioqhobo.cloudimg.io/v7/_playground-bucket-v2.teleporthq.io_/47fea3ae-00a5-467c-adc6-4e360d4fc31c/04848f42-fbeb-46ce-a38a-34dc739a299a?org_if_sml=1&amp;force_format=original"
           />
           <link
             rel="canonical"
@@ -320,7 +320,7 @@ const ExteriorServices = (props) => {
                       </svg>
                     </div>
                     <div className="feature-text">
-                      <strong>6-Month SiO2 Protection:</strong>
+                      <strong>3-Month SiO2 Protection:</strong>
                       <span>High-gloss CarPro HydrO2 sealant applied</span>
                     </div>
                   </li>
@@ -345,7 +345,7 @@ const ExteriorServices = (props) => {
                       </svg>
                     </div>
                     <div className="feature-text">
-                      <strong>Trim &amp; Tire Restoration:</strong>
+                      <strong>Trim &amp; Tire Protection:</strong>
                       <span>
                         CarPro PERL UV protection for plastics and tires
                       </span>

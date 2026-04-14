@@ -31,7 +31,7 @@ const FullDetail = (props) => {
           />
           <meta
             property="og:image"
-            content="https://aheioqhobo.cloudimg.io/v7/_playground-bucket-v2.teleporthq.io_/47fea3ae-00a5-467c-adc6-4e360d4fc31c/9500b003-5b5c-4bd1-be26-4af716f42c86?org_if_sml=1&amp;force_format=original"
+            content="https://aheioqhobo.cloudimg.io/v7/_playground-bucket-v2.teleporthq.io_/47fea3ae-00a5-467c-adc6-4e360d4fc31c/04848f42-fbeb-46ce-a38a-34dc739a299a?org_if_sml=1&amp;force_format=original"
           />
           <link
             rel="canonical"
@@ -94,7 +94,7 @@ const FullDetail = (props) => {
           <div className="service-details__container">
             <div className="service-details__header">
               <h2 className="section-title service-details__title">
-                Premium Interior &amp; Exterior Detail — Starting at $140
+                Premium Interior &amp; Exterior Detail — Starting at $160
               </h2>
               <div className="service-details__value-tag">
                 <svg
@@ -149,7 +149,12 @@ const FullDetail = (props) => {
                 </div>
                 <div className="service-details__content">
                   <h3 className="service-details__item-title">
-                    Deep Hand Wash &amp; De-Bug
+                    Touchless Prewash &amp; Deep Hand Wash
+                    <span
+                      dangerouslySetInnerHTML={{
+                        __html: ' ',
+                      }}
+                    />
                   </h3>
                   <p className="section-content">
                     Multi-stage foam soak and pressure rinse to safely remove
@@ -179,9 +184,8 @@ const FullDetail = (props) => {
                     Total Wheel &amp; Well Care
                   </h3>
                   <p className="section-content">
-                    Intensive cleaning of wheels, tires, and inner wheel arches.
-                    We remove brake dust buildup and restore a factory-clean
-                    look to your undercarriage edges.
+                    Thorough cleaning of wheels, tires, and fender wells to
+                    remove road film and grime for a clean, refreshed look.
                   </p>
                 </div>
               </div>
@@ -230,38 +234,11 @@ const FullDetail = (props) => {
                 </div>
                 <div className="service-details__content">
                   <h3 className="service-details__item-title">
-                    Deep Shampoo &amp; Extraction
+                    Deep Shampoo &amp; Scrub
                   </h3>
                   <p className="section-content">
-                    Full stain removal and deep hot-water extraction of carpets
-                    and mats to eliminate odors and embedded dirt from the
-                    fibers.
-                  </p>
-                </div>
-              </div>
-              <div className="service-details__item">
-                <div className="service-details__icon">
-                  <svg
-                    fill="none"
-                    width="24"
-                    xmlns="http://www.w3.org/2000/svg"
-                    height="24"
-                    stroke="currentColor"
-                    viewbox="0 0 24 24"
-                    strokeWidth="2"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  >
-                    <path d="M20 6L9 17l-5-5"></path>
-                  </svg>
-                </div>
-                <div className="service-details__content">
-                  <h3 className="service-details__item-title">
-                    6-Month SiO2 Protection
-                  </h3>
-                  <p className="section-content">
-                    High-gloss CarPro HydrO2 sealant applied to paint, windows,
-                    and wheels for incredible water beading and UV resistance.
+                    Intensive scrub of all carpets and mats to lift and remove
+                    deep-seated dirt and debris from the fibers.
                   </p>
                 </div>
               </div>
@@ -354,17 +331,17 @@ const FullDetail = (props) => {
               <ul className="service-details__pricing-list">
                 <li className="service-details__pricing-item">
                   <span className="service-details__vehicle">Sedans</span>
-                  <span className="service-details__price">$140</span>
+                  <span className="service-details__price">$160</span>
                 </li>
                 <li className="service-details__pricing-item">
                   <span className="service-details__vehicle">SUVs</span>
-                  <span className="service-details__price">$170</span>
+                  <span className="service-details__price">$180</span>
                 </li>
                 <li className="service-details__pricing-item">
                   <span className="service-details__vehicle">
                     Trucks / Large SUVs / Minivans
                   </span>
-                  <span className="service-details__price">$180</span>
+                  <span className="service-details__price">$190</span>
                 </li>
               </ul>
               <p className="service-details__comparison">

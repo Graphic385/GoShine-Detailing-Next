@@ -34,28 +34,27 @@ const AddOns = (props) => {
               </p>
             </header>
             <div className="add-ons-grid">
-              <div className="add-ons-card">
+              <div className="add-ons-card add-ons-thq-add-ons-card-elm1">
                 <div className="add-ons-card-content">
                   <span className="add-ons-name">
-                    Ceramic Rinse &amp; Shine (1 to 2 months)
-                  </span>
-                  <span className="add-ons-price">$20</span>
-                </div>
-              </div>
-              <div className="add-ons-card">
-                <div className="add-ons-card-content">
-                  <span className="add-ons-name">
-                    Ceramic Shield Sealant (6 to 8 months)
+                    Ceramic Shield Sealant (3 months)
                   </span>
                   <span className="add-ons-price">$30</span>
                 </div>
+                <p className="add-ons-note add-ons-thq-add-ons-note-elm1">
+                  Adds a protective layer that enhances shine and repels water,
+                  dirt, and contaminants for up to 3 months.
+                </p>
               </div>
               <div className="add-ons-card">
                 <div className="add-ons-card-content">
                   <span className="add-ons-name">Pet hair removal</span>
                   <span className="add-ons-price">$20-40</span>
                 </div>
-                <p className="add-ons-note">depends on severity</p>
+                <p className="add-ons-note">
+                  Thoroughly removes embedded pet hair from seats, carpets, and
+                  upholstery.
+                </p>
               </div>
               <div className="add-ons-card">
                 <div className="add-ons-card-content">
@@ -64,36 +63,69 @@ const AddOns = (props) => {
                   </span>
                   <span className="add-ons-price">$15</span>
                 </div>
+                <p className="add-ons-note">
+                  Deep cleans and lifts stains from fabric or leather seats.
+                </p>
               </div>
               <div className="add-ons-card">
                 <div className="add-ons-card-content">
                   <span className="add-ons-name">Floor mat shampoo</span>
                   <span className="add-ons-price">$10</span>
                 </div>
+                <p className="add-ons-note">
+                  Scrubs and extracts dirt from floor mats, leaving them fresh
+                  and clean.
+                </p>
               </div>
               <div className="add-ons-card">
                 <div className="add-ons-card-content">
-                  <span className="add-ons-name">Iron/fallout removal</span>
-                  <span className="add-ons-price">$50</span>
+                  <span className="add-ons-name">Full Decontamination</span>
+                  <span className="add-ons-price">$70</span>
                 </div>
+                <p className="add-ons-note">
+                  Removes embedded iron particles and contaminants from your
+                  vehicle&apos;s paint.
+                </p>
               </div>
               <div className="add-ons-card">
                 <div className="add-ons-card-content">
-                  <span className="add-ons-name">Interior protection</span>
+                  <span className="add-ons-name">SiO2 Interior protection</span>
                   <span className="add-ons-price">$20</span>
                 </div>
-              </div>
-              <div className="add-ons-card">
-                <div className="add-ons-card-content">
-                  <span className="add-ons-name">Engine Bay Cleaning</span>
-                  <span className="add-ons-price">$35</span>
-                </div>
+                <p className="add-ons-note">
+                  Applies a protective coating to interior surfaces to guard
+                  against UV damage and wear.
+                </p>
               </div>
               <div className="add-ons-card">
                 <div className="add-ons-card-content">
                   <span className="add-ons-name">Bug removal</span>
                   <span className="add-ons-price">$10</span>
                 </div>
+                <p className="add-ons-note">
+                  Safely removes bug splatter and residue from exterior
+                  surfaces.
+                </p>
+              </div>
+              <div className="add-ons-card">
+                <div className="add-ons-card-content">
+                  <span className="add-ons-name">Rain repellent</span>
+                  <span className="add-ons-price">$20</span>
+                </div>
+                <p className="add-ons-note">
+                  Improves visibility by helping water bead and slide off glass
+                  surfaces.
+                </p>
+              </div>
+              <div className="add-ons-card">
+                <div className="add-ons-card-content">
+                  <span className="add-ons-name">Salt stain removal</span>
+                  <span className="add-ons-price">$20</span>
+                </div>
+                <p className="add-ons-note">
+                  Eliminates salt stains and residue from carpets and
+                  upholstery.
+                </p>
               </div>
             </div>
             <footer className="add-ons-footer">
@@ -149,6 +181,20 @@ const AddOns = (props) => {
           }
           .add-ons-container3 {
             display: contents;
+          }
+          @media (max-width: 1600px) {
+            .add-ons-thq-add-ons-note-elm1 {
+              width: 346px;
+            }
+          }
+          @media (max-width: 390px) {
+            .add-ons-thq-add-ons-card-elm1 {
+              width: 359px;
+              margin-right: 0px;
+            }
+            .add-ons-thq-add-ons-note-elm1 {
+              margin-right: 12px;
+            }
           }
         `}
       </style>

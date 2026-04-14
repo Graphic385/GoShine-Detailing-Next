@@ -26,7 +26,7 @@ class CustomDocument extends Document {
           ></link>
           <link
             rel="shortcut icon"
-            href="/company-logo.png"
+            href="/logo144x144.png"
             type="icon/png"
             sizes="32x32"
           ></link>
@@ -69,6 +69,12 @@ class CustomDocument extends Document {
         <body>
           <Main></Main>
           <NextScript></NextScript>
+          <div
+            dangerouslySetInnerHTML={{
+              __html:
+                "\n        <script defer src='https://unpkg.com/@teleporthq/teleport-custom-scripts'></script>",
+            }}
+          ></div>
         </body>
       </Html>
     )

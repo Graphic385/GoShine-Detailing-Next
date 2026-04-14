@@ -31,7 +31,7 @@ const Home = (props) => {
           />
           <meta
             property="og:image"
-            content="https://aheioqhobo.cloudimg.io/v7/_playground-bucket-v2.teleporthq.io_/47fea3ae-00a5-467c-adc6-4e360d4fc31c/9500b003-5b5c-4bd1-be26-4af716f42c86?org_if_sml=1&amp;force_format=original"
+            content="https://aheioqhobo.cloudimg.io/v7/_playground-bucket-v2.teleporthq.io_/47fea3ae-00a5-467c-adc6-4e360d4fc31c/04848f42-fbeb-46ce-a38a-34dc739a299a?org_if_sml=1&amp;force_format=original"
           />
           <link
             rel="canonical"
@@ -211,7 +211,7 @@ const Home = (props) => {
                     The complete package. Inside and out like new.
                   </p>
                   <div className="service-card-footer">
-                    <span className="starting-price">Starting at $140</span>
+                    <span className="starting-price">Starting at $160</span>
                     <Link href="/full-detail">
                       <a className="home-link15 view-details">View Details →</a>
                     </Link>
@@ -637,347 +637,6 @@ const Home = (props) => {
           </div>
         </section>
         <AddOns></AddOns>
-        <section className="gallery-section">
-          <div className="gallery-wrapper">
-            <div className="gallery-header">
-              <h2 className="section-title">The Transformation</h2>
-              <p className="section-content">
-                Real results from our mobile detailing units.
-              </p>
-            </div>
-            <div id="galleryCarousel" className="gallery-carousel">
-              <div className="gallery-item">
-                <div className="comparison-container">
-                  <div className="comparison-image">
-                    <div className="comparison-label">
-                      <span>Paint Restoration</span>
-                    </div>
-                    <img
-                      alt="Before and After Detailing"
-                      src="https://images.pexels.com/photos/6872150/pexels-photo-6872150.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1500"
-                    />
-                  </div>
-                </div>
-              </div>
-              <div className="gallery-item">
-                <div className="comparison-container">
-                  <div className="comparison-image">
-                    <img
-                      alt="Interior Detail Result"
-                      src="https://images.pexels.com/photos/6873100/pexels-photo-6873100.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1500"
-                    />
-                    <div className="comparison-label">
-                      <span>Interior Revive</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="gallery-item">
-                <div className="comparison-container">
-                  <div className="comparison-image">
-                    <img
-                      alt="Ceramic Coating Shine"
-                      src="https://images.pexels.com/photos/6872164/pexels-photo-6872164.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1500"
-                    />
-                    <div className="comparison-label">
-                      <span>Ceramic Shine</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="gallery-nav">
-              <button
-                aria-label="Slide 1"
-                data-index="0"
-                className="active gallery-dot"
-              ></button>
-              <button
-                aria-label="Slide 2"
-                data-index="1"
-                className="gallery-dot"
-              ></button>
-              <button
-                aria-label="Slide 3"
-                data-index="2"
-                className="gallery-dot"
-              ></button>
-            </div>
-          </div>
-        </section>
-        <section className="testimonials-section">
-          <div className="testimonials-container">
-            <div className="testimonials-header">
-              <h2 className="section-title">What Your Neighbors Say</h2>
-            </div>
-            <div className="testimonials-rail">
-              <div className="testimonial-card">
-                <div className="rating">
-                  <svg
-                    width="16"
-                    xmlns="http://www.w3.org/2000/svg"
-                    height="16"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.12 2.12 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.12 2.12 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.12 2.12 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.12 2.12 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.12 2.12 0 0 0 1.597-1.16z"
-                      fill="var(--color-secondary)"
-                      stroke="var(--color-secondary)"
-                      strokeWidth="2"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    ></path>
-                  </svg>
-                  <svg
-                    width="16"
-                    xmlns="http://www.w3.org/2000/svg"
-                    height="16"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.12 2.12 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.12 2.12 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.12 2.12 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.12 2.12 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.12 2.12 0 0 0 1.597-1.16z"
-                      fill="var(--color-secondary)"
-                      stroke="var(--color-secondary)"
-                      strokeWidth="2"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    ></path>
-                  </svg>
-                  <svg
-                    width="16"
-                    xmlns="http://www.w3.org/2000/svg"
-                    height="16"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.12 2.12 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.12 2.12 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.12 2.12 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.12 2.12 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.12 2.12 0 0 0 1.597-1.16z"
-                      fill="var(--color-secondary)"
-                      stroke="var(--color-secondary)"
-                      strokeWidth="2"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    ></path>
-                  </svg>
-                  <svg
-                    width="16"
-                    xmlns="http://www.w3.org/2000/svg"
-                    height="16"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.12 2.12 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.12 2.12 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.12 2.12 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.12 2.12 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.12 2.12 0 0 0 1.597-1.16z"
-                      fill="var(--color-secondary)"
-                      stroke="var(--color-secondary)"
-                      strokeWidth="2"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    ></path>
-                  </svg>
-                  <svg
-                    width="16"
-                    xmlns="http://www.w3.org/2000/svg"
-                    height="16"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.12 2.12 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.12 2.12 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.12 2.12 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.12 2.12 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.12 2.12 0 0 0 1.597-1.16z"
-                      fill="var(--color-secondary)"
-                      stroke="var(--color-secondary)"
-                      strokeWidth="2"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    ></path>
-                  </svg>
-                </div>
-                <p className="testimonial-text">
-                  &quot;GoShine did an incredible job on my SUV. They arrived on
-                  time in Richmond Hill and the interior looks brand new. Truly
-                  premium service.&quot;
-                </p>
-                <div className="testimonial-author">
-                  <span className="author-name">Michael R.</span>
-                  <span className="author-location">Richmond Hill</span>
-                </div>
-              </div>
-              <div className="testimonial-card">
-                <div className="rating">
-                  <svg
-                    width="16"
-                    xmlns="http://www.w3.org/2000/svg"
-                    height="16"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.12 2.12 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.12 2.12 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.12 2.12 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.12 2.12 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.12 2.12 0 0 0 1.597-1.16z"
-                      fill="var(--color-secondary)"
-                      stroke="var(--color-secondary)"
-                      strokeWidth="2"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    ></path>
-                  </svg>
-                  <svg
-                    width="16"
-                    xmlns="http://www.w3.org/2000/svg"
-                    height="16"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.12 2.12 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.12 2.12 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.12 2.12 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.12 2.12 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.12 2.12 0 0 0 1.597-1.16z"
-                      fill="var(--color-secondary)"
-                      stroke="var(--color-secondary)"
-                      strokeWidth="2"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    ></path>
-                  </svg>
-                  <svg
-                    width="16"
-                    xmlns="http://www.w3.org/2000/svg"
-                    height="16"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.12 2.12 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.12 2.12 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.12 2.12 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.12 2.12 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.12 2.12 0 0 0 1.597-1.16z"
-                      fill="var(--color-secondary)"
-                      stroke="var(--color-secondary)"
-                      strokeWidth="2"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    ></path>
-                  </svg>
-                  <svg
-                    width="16"
-                    xmlns="http://www.w3.org/2000/svg"
-                    height="16"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.12 2.12 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.12 2.12 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.12 2.12 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.12 2.12 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.12 2.12 0 0 0 1.597-1.16z"
-                      fill="var(--color-secondary)"
-                      stroke="var(--color-secondary)"
-                      strokeWidth="2"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    ></path>
-                  </svg>
-                  <svg
-                    width="16"
-                    xmlns="http://www.w3.org/2000/svg"
-                    height="16"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.12 2.12 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.12 2.12 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.12 2.12 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.12 2.12 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.12 2.12 0 0 0 1.597-1.16z"
-                      fill="var(--color-secondary)"
-                      stroke="var(--color-secondary)"
-                      strokeWidth="2"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    ></path>
-                  </svg>
-                </div>
-                <p className="testimonial-text">
-                  &quot;Best ceramic coating service in Vaughan. The water beads
-                  off effortlessly and the paint depth is unreal. Highly
-                  recommend GoShine.&quot;
-                </p>
-                <div className="testimonial-author">
-                  <span className="author-name">Sarah L.</span>
-                  <span className="author-location">Vaughan</span>
-                </div>
-              </div>
-              <div className="testimonial-card">
-                <div className="rating">
-                  <svg
-                    width="16"
-                    xmlns="http://www.w3.org/2000/svg"
-                    height="16"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.12 2.12 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.12 2.12 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.12 2.12 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.12 2.12 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.12 2.12 0 0 0 1.597-1.16z"
-                      fill="var(--color-secondary)"
-                      stroke="var(--color-secondary)"
-                      strokeWidth="2"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    ></path>
-                  </svg>
-                  <svg
-                    width="16"
-                    xmlns="http://www.w3.org/2000/svg"
-                    height="16"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.12 2.12 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.12 2.12 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.12 2.12 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.12 2.12 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.12 2.12 0 0 0 1.597-1.16z"
-                      fill="var(--color-secondary)"
-                      stroke="var(--color-secondary)"
-                      strokeWidth="2"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    ></path>
-                  </svg>
-                  <svg
-                    width="16"
-                    xmlns="http://www.w3.org/2000/svg"
-                    height="16"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.12 2.12 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.12 2.12 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.12 2.12 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.12 2.12 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.12 2.12 0 0 0 1.597-1.16z"
-                      fill="var(--color-secondary)"
-                      stroke="var(--color-secondary)"
-                      strokeWidth="2"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    ></path>
-                  </svg>
-                  <svg
-                    width="16"
-                    xmlns="http://www.w3.org/2000/svg"
-                    height="16"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.12 2.12 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.12 2.12 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.12 2.12 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.12 2.12 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.12 2.12 0 0 0 1.597-1.16z"
-                      fill="var(--color-secondary)"
-                      stroke="var(--color-secondary)"
-                      strokeWidth="2"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    ></path>
-                  </svg>
-                  <svg
-                    width="16"
-                    xmlns="http://www.w3.org/2000/svg"
-                    height="16"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.12 2.12 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.12 2.12 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.12 2.12 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.12 2.12 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.12 2.12 0 0 0 1.597-1.16z"
-                      fill="var(--color-secondary)"
-                      stroke="var(--color-secondary)"
-                      strokeWidth="2"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    ></path>
-                  </svg>
-                </div>
-                <p className="testimonial-text">
-                  &quot;Professional, courteous, and detailed. They transformed
-                  my neglected work car into something I&apos;m proud to drive
-                  again. Thornhill&apos;s best.&quot;
-                </p>
-                <div className="testimonial-author">
-                  <span className="author-name">David K.</span>
-                  <span className="author-location">Thornhill</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
         <section className="cta-section">
           <div className="cta-alert-wrapper">
             <div className="cta-content">
@@ -991,12 +650,104 @@ const Home = (props) => {
                 <Link href="/booking">
                   <a>
                     <div>
-                      <div className="btn-lg btn btn-secondary">
+                      <div className="home-thq-btn-lg-elm2 btn-lg btn btn-secondary">
                         <span>Book Mobile Detailing</span>
                       </div>
                     </div>
                   </a>
                 </Link>
+                <div className="home-thq-cta-contact-info-elm">
+                  <a href="tel:6473814226" className="home-link22">
+                    <div className="cta-contact-link">
+                      <svg
+                        fill="none"
+                        width="16"
+                        height="16"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                        strokeWidth="2"
+                      >
+                        <path
+                          d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                        ></path>
+                        <circle r="3" cx="12" cy="10"></circle>
+                      </svg>
+                      <span>647-381-4226</span>
+                    </div>
+                  </a>
+                  <a
+                    href="mailto:goshineautocanada@gmail.com?subject="
+                    className="home-link23"
+                  >
+                    <div className="cta-contact-link">
+                      <svg
+                        fill="none"
+                        width="16"
+                        height="16"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                        strokeWidth="2"
+                      >
+                        <path
+                          d="m22 7l-8.991 5.727a2 2 0 0 1-2.009 0L2 7"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                        ></path>
+                        <rect
+                          x="2"
+                          y="4"
+                          rx="2"
+                          width="20"
+                          height="16"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                        ></rect>
+                      </svg>
+                      <span>goshineautocanada@gmail.com</span>
+                    </div>
+                  </a>
+                  <a
+                    href="https://www.instagram.com/goshineautos/"
+                    className="home-link24"
+                  >
+                    <div className="cta-contact-link">
+                      <svg
+                        fill="none"
+                        width="16"
+                        height="16"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                        strokeWidth="2"
+                      >
+                        <rect
+                          x="2"
+                          y="2"
+                          rx="5"
+                          width="20"
+                          height="20"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                        ></rect>
+                        <path
+                          d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                        ></path>
+                        <line
+                          x1="17.5"
+                          x2="17.51"
+                          y1="6.5"
+                          y2="6.5"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                        ></line>
+                      </svg>
+                      <span>@goshineautos</span>
+                    </div>
+                  </a>
+                </div>
               </div>
             </div>
           </div>
@@ -1071,7 +822,7 @@ section {
             ></Script>
           </div>
         </div>
-        <Footer></Footer>
+        <Footer rootClassName="footerroot-class-name"></Footer>
       </div>
       <style jsx>
         {`
@@ -1130,6 +881,26 @@ section {
           .home-container4 {
             display: contents;
           }
+          .home-thq-btn-lg-elm2 {
+            border-color: #9a6f1a;
+            background-color: #9a6f1a;
+          }
+          .home-thq-cta-contact-info-elm {
+            gap: var(--spacing-lg);
+            display: flex;
+            flex-wrap: wrap;
+            margin-top: var(--spacing-lg);
+            justify-content: center;
+          }
+          .home-link22 {
+            display: contents;
+          }
+          .home-link23 {
+            display: contents;
+          }
+          .home-link24 {
+            display: contents;
+          }
           .home-container6 {
             display: none;
           }
@@ -1141,6 +912,13 @@ section {
           }
           .home-container9 {
             display: contents;
+          }
+          @media (max-width: 767px) {
+            .home-thq-cta-contact-info-elm {
+              gap: var(--spacing-sm);
+              align-items: center;
+              flex-direction: column;
+            }
           }
         `}
       </style>
