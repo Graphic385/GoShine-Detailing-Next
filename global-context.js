@@ -1,31 +1,28 @@
 
-import { createContext, useMemo, useContext, useState, useEffect } from 'react'
-import { useLocale } from "next-intl";
+import { createContext, useMemo, useContext, useState } from 'react'
 
 const GlobalContext = createContext(null)
+const fallbackLocale = { name: 'English', short: 'en' }
 
 export const GlobalProvider = ({ initialLocales, children }) => {
-  const localeValue = useLocale()
-  const [locales, setLocales] = useState(initialLocales ?? [{"name":"English","short":"en"}])
-  const [locale, setLocale] = useState({"name":"English","short":"en"})
-  
-  useEffect(() => {
-    if (!locales) {
-      return
-    }
+  const [locales, setLocales] = useState(initialLocales ?? [fallbackLocale])
+  const [locale, setLocale] = useState(fallbackLocale)
 
-    const currentLangValue = locales.find((el) => el.short === localeValue)
-    setLocale(currentLangValue)
-  }, [locales, localeValue])
+  const selectedLocale = useMemo(() => {
+    if (!locales?.length) {
+      return fallbackLocale
+    }
+    return locales.find((el) => el.short === locale.short) ?? locales[0]
+  }, [locales, locale.short])
 
   const value = useMemo(() => {
     return {
       locales,
-      locale,
+      locale: selectedLocale,
       setLocales,
       setLocale
     }
-  }, [locales, locale])
+  }, [locales, selectedLocale])
 
   return (
     <GlobalContext.Provider value={value}>

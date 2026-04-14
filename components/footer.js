@@ -1,9 +1,8 @@
 import React from 'react'
 import Link from 'next/link'
 
-import Script from 'dangerous-html/react'
+import Script from '@/components/html-script'
 import PropTypes from 'prop-types'
-import { useTranslations } from 'next-intl'
 
 const Footer = (props) => {
   return (
@@ -64,44 +63,44 @@ const Footer = (props) => {
                   <ul className="footer-link-list">
                     <li>
                       <Link href="/">
-                        <a>
-                          <div className="footer-thq-footer-link-elm1 footer-link">
-                            <span>Home</span>
-                          </div>
-                        </a>
+
+                        <div className="footer-thq-footer-link-elm1 footer-link">
+                          <span>Home</span>
+                        </div>
+
                       </Link>
                     </li>
                     <Link href="/booking">
-                      <a>
-                        <li>
-                          <div className="footer-link">
-                            <span>Booking</span>
-                          </div>
-                        </li>
-                      </a>
+
+                      <li>
+                        <div className="footer-link">
+                          <span>Booking</span>
+                        </div>
+                      </li>
+
                     </Link>
                     <Link href="/gallery">
-                      <a>
-                        <li>
-                          <div className="footer-link">
-                            <span>Gallery</span>
-                          </div>
-                        </li>
-                      </a>
+
+                      <li>
+                        <div className="footer-link">
+                          <span>Gallery</span>
+                        </div>
+                      </li>
+
                     </Link>
                     <li>
-                      <a href="#services">
+                      <Link href="/#services">
                         <div className="footer-link">
                           <span>Our Services</span>
                         </div>
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a href="#gallery">
+                      <Link href="/gallery">
                         <div className="footer-link">
                           <span>Recent Work</span>
                         </div>
-                      </a>
+                      </Link>
                     </li>
                     <li></li>
                   </ul>
@@ -195,11 +194,11 @@ const Footer = (props) => {
                 </div>
                 <div className="footer-cta-wrapper">
                   <Link href="/booking">
-                    <a>
-                      <div className="footer-thq-btn-elm btn btn-sm btn-primary">
-                        <span>Book Mobile Service</span>
-                      </div>
-                    </a>
+
+                    <div className="footer-thq-btn-elm btn btn-sm btn-primary">
+                      <span>Book Mobile Service</span>
+                    </div>
+
                   </Link>
                 </div>
               </div>
@@ -294,7 +293,7 @@ const Footer = (props) => {
         `}
       </style>
     </>
-  )
+  );
 }
 
 Footer.defaultProps = {

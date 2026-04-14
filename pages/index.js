@@ -1,9 +1,9 @@
 import React from 'react'
 import Link from 'next/link'
 import Head from 'next/head'
+import Image from 'next/image'
 
-import Script from 'dangerous-html/react'
-import { useTranslations } from 'next-intl'
+import Script from '@/components/html-script'
 
 import Navigation from '../components/navigation'
 import AddOns from '../components/add-ons'
@@ -45,14 +45,13 @@ const Home = (props) => {
         <Navigation></Navigation>
         <section className="hero-section">
           <div className="hero-bg-media">
-            <video
-              src="https://videos.pexels.com/video-files/6872083/6872083-hd_1280_720_25fps.mp4"
-              loop="true"
-              muted="true"
-              poster="https://images.pexels.com/videos/6872083/pictures/preview-0.jpg"
-              autoPlay="true"
-              playsInline="true"
-            ></video>
+            <Image
+              src="https://images.pexels.com/videos/6872083/pictures/preview-0.jpg?auto=compress&cs=tinysrgb&w=1600"
+              alt="Detailed luxury vehicle in sunlight"
+              fill
+              priority
+              sizes="100vw"
+            />
             <div className="hero-overlay"></div>
           </div>
           <div className="hero-container">
@@ -89,13 +88,13 @@ const Home = (props) => {
               </p>
               <div className="hero-actions">
                 <Link href="/booking">
-                  <a>
-                    <div>
-                      <div className="btn-lg btn btn-primary">
-                        <span>Book Your Detailing Now</span>
-                      </div>
+
+                  <div>
+                    <div className="btn-lg btn btn-primary">
+                      <span>Book Your Detailing Now</span>
                     </div>
-                  </a>
+                  </div>
+
                 </Link>
               </div>
             </div>
@@ -112,9 +111,12 @@ const Home = (props) => {
             <div className="services-grid">
               <div data-service="express-exterior" className="service-card">
                 <div className="service-image">
-                  <img
+                  <Image
                     alt="Express Exterior Car Wash"
-                    src="https://images.pexels.com/photos/4870702/pexels-photo-4870702.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1500"
+                    src="https://images.pexels.com/photos/4870702/pexels-photo-4870702.jpeg?auto=compress&cs=tinysrgb&w=900"
+                    fill
+                    sizes="(max-width: 767px) 100vw, (max-width: 991px) 50vw, 33vw"
+                    loading="lazy"
                   />
                 </div>
                 <div className="service-card-content">
@@ -124,17 +126,20 @@ const Home = (props) => {
                   </p>
                   <div className="service-card-footer">
                     <span className="starting-price">Starting at $40</span>
-                    <Link href="/exterior-services">
-                      <a className="home-link11 view-details">View Details →</a>
+                    <Link href="/exterior-services" className="home-link11 view-details">
+                      View Details →
                     </Link>
                   </div>
                 </div>
               </div>
               <div data-service="premium-exterior" className="service-card">
                 <div className="service-image">
-                  <img
+                  <Image
                     alt="Premium Exterior Car Wash"
-                    src="https://images.pexels.com/photos/6872582/pexels-photo-6872582.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1500"
+                    src="https://images.pexels.com/photos/6872582/pexels-photo-6872582.jpeg?auto=compress&cs=tinysrgb&w=900"
+                    fill
+                    sizes="(max-width: 767px) 100vw, (max-width: 991px) 50vw, 33vw"
+                    loading="lazy"
                   />
                 </div>
                 <div className="service-card-content">
@@ -144,17 +149,20 @@ const Home = (props) => {
                   </p>
                   <div className="service-card-footer">
                     <span className="starting-price">Starting at $70</span>
-                    <Link href="/exterior-services">
-                      <a className="home-link12 view-details">View Details →</a>
+                    <Link href="/exterior-services" className="home-link12 view-details">
+                      View Details →
                     </Link>
                   </div>
                 </div>
               </div>
               <div data-service="express-interior" className="service-card">
                 <div className="service-image">
-                  <img
+                  <Image
                     alt="Express Interior Cleaning"
-                    src="https://images.pexels.com/photos/5233264/pexels-photo-5233264.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1500"
+                    src="https://images.pexels.com/photos/5233264/pexels-photo-5233264.jpeg?auto=compress&cs=tinysrgb&w=900"
+                    fill
+                    sizes="(max-width: 767px) 100vw, (max-width: 991px) 50vw, 33vw"
+                    loading="lazy"
                   />
                 </div>
                 <div className="service-card-content">
@@ -164,17 +172,20 @@ const Home = (props) => {
                   </p>
                   <div className="service-card-footer">
                     <span className="starting-price">Starting at $60</span>
-                    <Link href="/interior-services">
-                      <a className="home-link13 view-details">View Details →</a>
+                    <Link href="/interior-services" className="home-link13 view-details">
+                      View Details →
                     </Link>
                   </div>
                 </div>
               </div>
               <div data-service="premium-interior" className="service-card">
                 <div className="service-image">
-                  <img
+                  <Image
                     alt="Premium Interior Cleaning"
-                    src="https://images.pexels.com/photos/5233285/pexels-photo-5233285.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1500"
+                    src="https://images.pexels.com/photos/5233285/pexels-photo-5233285.jpeg?auto=compress&cs=tinysrgb&w=900"
+                    fill
+                    sizes="(max-width: 767px) 100vw, (max-width: 991px) 50vw, 33vw"
+                    loading="lazy"
                   />
                 </div>
                 <div className="service-card-content">
@@ -184,8 +195,8 @@ const Home = (props) => {
                   </p>
                   <div className="service-card-footer">
                     <span className="starting-price">Starting at $100</span>
-                    <Link href="/interior-services">
-                      <a className="home-link14 view-details">View Details →</a>
+                    <Link href="/interior-services" className="home-link14 view-details">
+                      View Details →
                     </Link>
                   </div>
                 </div>
@@ -198,9 +209,12 @@ const Home = (props) => {
                   <span>Most Popular</span>
                 </div>
                 <div className="service-image">
-                  <img
+                  <Image
                     alt="Full Interior and Exterior Detail"
-                    src="https://images.pexels.com/photos/6873174/pexels-photo-6873174.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1500"
+                    src="https://images.pexels.com/photos/6873174/pexels-photo-6873174.jpeg?auto=compress&cs=tinysrgb&w=900"
+                    fill
+                    sizes="(max-width: 767px) 100vw, (max-width: 991px) 50vw, 33vw"
+                    loading="lazy"
                   />
                 </div>
                 <div className="service-card-content">
@@ -212,8 +226,8 @@ const Home = (props) => {
                   </p>
                   <div className="service-card-footer">
                     <span className="starting-price">Starting at $160</span>
-                    <Link href="/full-detail">
-                      <a className="home-link15 view-details">View Details →</a>
+                    <Link href="/full-detail" className="home-link15 view-details">
+                      View Details →
                     </Link>
                   </div>
                 </div>
@@ -280,11 +294,11 @@ const Home = (props) => {
               </div>
               <div className="service-modal-footer">
                 <Link href="/booking">
-                  <a>
-                    <div className="btn-lg btn btn-primary">
-                      <span>Book This Service</span>
-                    </div>
-                  </a>
+
+                  <div className="btn-lg btn btn-primary">
+                    <span>Book This Service</span>
+                  </div>
+
                 </Link>
               </div>
             </div>
@@ -352,11 +366,11 @@ const Home = (props) => {
               </div>
               <div className="service-modal-footer">
                 <Link href="/booking">
-                  <a>
-                    <div className="btn-lg btn btn-primary">
-                      <span>Book This Service</span>
-                    </div>
-                  </a>
+
+                  <div className="btn-lg btn btn-primary">
+                    <span>Book This Service</span>
+                  </div>
+
                 </Link>
               </div>
             </div>
@@ -428,11 +442,11 @@ const Home = (props) => {
               </div>
               <div className="service-modal-footer">
                 <Link href="/booking">
-                  <a>
-                    <div className="btn-lg btn btn-primary">
-                      <span>Book This Service</span>
-                    </div>
-                  </a>
+
+                  <div className="btn-lg btn btn-primary">
+                    <span>Book This Service</span>
+                  </div>
+
                 </Link>
               </div>
             </div>
@@ -503,11 +517,11 @@ const Home = (props) => {
               </div>
               <div className="service-modal-footer">
                 <Link href="/booking">
-                  <a>
-                    <div className="btn-lg btn btn-primary">
-                      <span>Book This Service</span>
-                    </div>
-                  </a>
+
+                  <div className="btn-lg btn btn-primary">
+                    <span>Book This Service</span>
+                  </div>
+
                 </Link>
               </div>
             </div>
@@ -590,11 +604,11 @@ const Home = (props) => {
               </div>
               <div className="service-modal-footer">
                 <Link href="/booking">
-                  <a>
-                    <div className="btn-lg btn btn-primary">
-                      <span>Book This Service</span>
-                    </div>
-                  </a>
+
+                  <div className="btn-lg btn btn-primary">
+                    <span>Book This Service</span>
+                  </div>
+
                 </Link>
               </div>
             </div>
@@ -648,13 +662,13 @@ const Home = (props) => {
               </div>
               <div className="cta-actions">
                 <Link href="/booking">
-                  <a>
-                    <div>
-                      <div className="home-thq-btn-lg-elm2 btn-lg btn btn-secondary">
-                        <span>Book Mobile Detailing</span>
-                      </div>
+
+                  <div>
+                    <div className="home-thq-btn-lg-elm2 btn-lg btn btn-secondary">
+                      <span>Book Mobile Detailing</span>
                     </div>
-                  </a>
+                  </div>
+
                 </Link>
                 <div className="home-thq-cta-contact-info-elm">
                   <a href="tel:6473814226" className="home-link22">
@@ -764,64 +778,6 @@ section {
             ></Script>
           </div>
         </div>
-        <div className="home-container8">
-          <div className="home-container9">
-            <Script
-              html={`<script>
-        ;(function () {
-          // Gallery Carousel Logic
-          const carousel = document.getElementById("galleryCarousel")
-          const dots = document.querySelectorAll(".gallery-dot")
-          if (carousel && dots.length > 0) {
-            carousel.addEventListener("scroll", () => {
-              const scrollPos = carousel.scrollLeft
-              const width = carousel.offsetWidth
-              const index = Math.round(scrollPos / width)
-              dots.forEach((dot, i) => {
-                if (i === index) {
-                  dot.classList.add("active")
-                } else {
-                  dot.classList.remove("active")
-                }
-              })
-            })
-            dots.forEach((dot) => {
-              dot.addEventListener("click", () => {
-                const index = parseInt(dot.getAttribute("data-index"))
-                const width = carousel.offsetWidth
-                carousel.scrollTo({
-                  left: index * width,
-                  behavior: "smooth",
-                })
-              })
-            })
-          }
-
-          // Simple Scroll Reveal Effect
-          const revealElements = document.querySelectorAll(".feature-card, .service-card, .testimonial-card")
-          const revealOnScroll = () => {
-            revealElements.forEach((el) => {
-              const rect = el.getBoundingClientRect()
-              const isVisible = rect.top < window.innerHeight - 50
-              if (isVisible) {
-                el.style.opacity = "1"
-                el.style.transform = "translateY(0)"
-              }
-            })
-          }
-          // Initial Styles for Reveal
-          revealElements.forEach((el) => {
-            el.style.opacity = "0"
-            el.style.transform = "translateY(20px)"
-            el.style.transition = "opacity 0.6s ease-out, transform 0.6s ease-out"
-          })
-          window.addEventListener("scroll", revealOnScroll)
-          revealOnScroll() // Run once on load
-        })()
-      </script>`}
-            ></Script>
-          </div>
-        </div>
         <Footer rootClassName="footerroot-class-name"></Footer>
       </div>
       <style jsx>
@@ -885,6 +841,11 @@ section {
             border-color: #9a6f1a;
             background-color: #9a6f1a;
           }
+          .home-hero-title {
+            font-family: var(--font-family-body);
+            font-weight: 800;
+            letter-spacing: 0.02em;
+          }
           .home-thq-cta-contact-info-elm {
             gap: var(--spacing-lg);
             display: flex;
@@ -923,7 +884,7 @@ section {
         `}
       </style>
     </>
-  )
+  );
 }
 
 export default Home

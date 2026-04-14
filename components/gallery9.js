@@ -1,8 +1,7 @@
 import React, { Fragment } from 'react'
 
-import Script from 'dangerous-html/react'
+import Script from '@/components/html-script'
 import PropTypes from 'prop-types'
-import { useTranslations } from 'next-intl'
 
 const Gallery9 = (props) => {
   return (

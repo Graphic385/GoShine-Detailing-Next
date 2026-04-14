@@ -1,7 +1,6 @@
 import React from 'react'
 
-import Script from 'dangerous-html/react'
-import { useTranslations } from 'next-intl'
+import Script from '@/components/html-script'
 
 const AddOns = (props) => {
   return (

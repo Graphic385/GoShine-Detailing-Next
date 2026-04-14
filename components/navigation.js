@@ -1,8 +1,7 @@
 import React from 'react'
 import Link from 'next/link'
 
-import Script from 'dangerous-html/react'
-import { useTranslations } from 'next-intl'
+import Script from '@/components/html-script'
 
 const Navigation = (props) => {
   return (
@@ -27,28 +26,28 @@ const Navigation = (props) => {
         <nav className="navigation-wrapper">
           <div className="navigation-container">
             <Link href="/">
-              <a>
-                <div
-                  aria-label="GoShine Auto Detailing Home"
-                  className="navigation-logo-link"
-                >
-                  <div className="navigation-thq-navigation-logo-icon-elm1 navigation-logo-icon">
-                    <img
-                      alt="GoShine Auto Detailing Logo"
-                      src="/company-logo-transparent-200h.webp"
-                      className="navigation-image"
-                    />
-                  </div>
+
+              <div
+                aria-label="GoShine Auto Detailing Home"
+                className="navigation-logo-link"
+              >
+                <div className="navigation-thq-navigation-logo-icon-elm1 navigation-logo-icon">
+                  <img
+                    alt="GoShine Auto Detailing Logo"
+                    src="/company-logo-transparent-200h.webp"
+                    className="navigation-image"
+                  />
                 </div>
-              </a>
+              </div>
+
             </Link>
             <div className="navigation-desktop-links">
-              <Link href="/">
-                <a>
-                  <div className="navigation-link">
-                    <span>Gallery</span>
-                  </div>
-                </a>
+              <Link href="/gallery">
+
+                <div className="navigation-link">
+                  <span>Gallery</span>
+                </div>
+
               </Link>
               <div className="navigation-dropdown">
                 <button
@@ -74,46 +73,48 @@ const Navigation = (props) => {
                 </button>
                 <div role="menu" className="navigation-dropdown-menu">
                   <Link href="/exterior-services">
-                    <a>
-                      <div role="menuitem" className="navigation-dropdown-item">
-                        <span>Exterior Services</span>
-                      </div>
-                    </a>
+
+                    <div role="menuitem" className="navigation-dropdown-item">
+                      <span>Exterior Services</span>
+                    </div>
+
                   </Link>
                   <Link href="/interior-services">
-                    <a>
-                      <div role="menuitem" className="navigation-dropdown-item">
-                        <span>Interior Services</span>
-                      </div>
-                    </a>
+
+                    <div role="menuitem" className="navigation-dropdown-item">
+                      <span>Interior Services</span>
+                    </div>
+
                   </Link>
                   <Link href="/full-detail">
-                    <a>
-                      <div role="menuitem" className="navigation-dropdown-item">
-                        <span>Full Detail</span>
-                      </div>
-                    </a>
+
+                    <div role="menuitem" className="navigation-dropdown-item">
+                      <span>Full Detail</span>
+                    </div>
+
                   </Link>
                   <Link href="/gallery">
-                    <a>
-                      <div role="menuitem" className="navigation-dropdown-item">
-                        <span>Gallery</span>
-                      </div>
-                    </a>
+
+                    <div role="menuitem" className="navigation-dropdown-item">
+                      <span>Gallery</span>
+                    </div>
+
                   </Link>
                 </div>
               </div>
-              <a href="#services">
+              <Link href="/#services">
+
                 <div className="navigation-thq-navigation-link-elm3 navigation-link">
                   <span>Pricing</span>
                 </div>
-              </a>
+
+              </Link>
               <Link href="/booking">
-                <a>
-                  <div className="btn btn-sm btn-primary">
-                    <span>Book Now</span>
-                  </div>
-                </a>
+
+                <div className="btn btn-sm btn-primary">
+                  <span>Book Now</span>
+                </div>
+
               </Link>
             </div>
             <button
@@ -145,17 +146,17 @@ const Navigation = (props) => {
         <div id="navigationMobileOverlay" className="navigation-mobile-overlay">
           <div className="navigation-overlay-header">
             <Link href="/">
-              <a>
-                <div className="navigation-logo-link">
-                  <div className="navigation-logo-icon">
-                    <img
-                      alt="GoShine Auto Detailing Logo"
-                      src="/company-logo-transparent-200h.webp"
-                      className="navigation-thq-image-elm"
-                    />
-                  </div>
+
+              <div className="navigation-logo-link">
+                <div className="navigation-logo-icon">
+                  <img
+                    alt="GoShine Auto Detailing Logo"
+                    src="/company-logo-transparent-200h.webp"
+                    className="navigation-thq-image-elm"
+                  />
                 </div>
-              </a>
+              </div>
+
             </Link>
             <button
               id="navigationMobileClose"
@@ -181,24 +182,26 @@ const Navigation = (props) => {
           </div>
           <div className="navigation-overlay-content">
             <div className="navigation-mobile-nav">
-              <Link href="/">
-                <a>
-                  <div className="navigation-mobile-link">
-                    <span>Gallery</span>
-                  </div>
-                </a>
+              <Link href="/gallery">
+
+                <div className="navigation-mobile-link">
+                  <span>Gallery</span>
+                </div>
+
               </Link>
-              <a href="#services">
+              <Link href="/#services">
+
                 <div className="navigation-thq-navigation-mobile-link-elm2 navigation-mobile-link">
                   <span>Pricing</span>
                 </div>
-              </a>
+
+              </Link>
               <Link href="/booking">
-                <a>
-                  <div className="navigation-mobile-link">
-                    <span>Booking</span>
-                  </div>
-                </a>
+
+                <div className="navigation-mobile-link">
+                  <span>Booking</span>
+                </div>
+
               </Link>
               <div data-thq="thq-dropdown" className="thq-dropdown">
                 <div
@@ -218,32 +221,32 @@ const Navigation = (props) => {
                 </div>
                 <ul data-thq="thq-dropdown-list" className="thq-dropdown-list">
                   <Link href="/exterior-services">
-                    <a>
-                      <div className="navigation-mobile-link">
-                        <span>Exterior Services</span>
-                      </div>
-                    </a>
+
+                    <div className="navigation-mobile-link">
+                      <span>Exterior Services</span>
+                    </div>
+
                   </Link>
                   <Link href="/interior-services">
-                    <a>
-                      <div className="navigation-mobile-link">
-                        <span>Interior Services</span>
-                      </div>
-                    </a>
+
+                    <div className="navigation-mobile-link">
+                      <span>Interior Services</span>
+                    </div>
+
                   </Link>
                   <Link href="/full-detail">
-                    <a>
-                      <div className="navigation-mobile-link">
-                        <span>Full Detail</span>
-                      </div>
-                    </a>
+
+                    <div className="navigation-mobile-link">
+                      <span>Full Detail</span>
+                    </div>
+
                   </Link>
                   <Link href="/gallery">
-                    <a>
-                      <div className="navigation-mobile-link">
-                        <span>Gallery</span>
-                      </div>
-                    </a>
+
+                    <div className="navigation-mobile-link">
+                      <span>Gallery</span>
+                    </div>
+
                   </Link>
                 </ul>
               </div>
@@ -345,11 +348,11 @@ const Navigation = (props) => {
                 </a>
               </div>
               <Link href="/booking">
-                <a>
-                  <div className="btn-lg btn btn-primary navigation-mobile-cta">
-                    <span>Book Premium Detailing</span>
-                  </div>
-                </a>
+
+                <div className="btn-lg btn btn-primary navigation-mobile-cta">
+                  <span>Book Premium Detailing</span>
+                </div>
+
               </Link>
             </div>
           </div>
@@ -563,7 +566,7 @@ transform: translateY(0);}}
         `}
       </style>
     </>
-  )
+  );
 }
 
 export default Navigation

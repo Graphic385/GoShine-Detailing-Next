@@ -2,8 +2,7 @@ import React from 'react'
 import Link from 'next/link'
 import Head from 'next/head'
 
-import Script from 'dangerous-html/react'
-import { useTranslations } from 'next-intl'
+import Script from '@/components/html-script'
 
 import Navigation from '../components/navigation'
 import Footer from '../components/footer'
@@ -389,11 +388,11 @@ const FullDetail = (props) => {
               </div>
               <div className="booking-cta__action">
                 <Link href="/booking">
-                  <a>
-                    <div className="btn btn-xl booking-cta__btn btn-accent">
-                      <span>Book Full Detail</span>
-                    </div>
-                  </a>
+
+                  <div className="btn btn-xl booking-cta__btn btn-accent">
+                    <span>Book Full Detail</span>
+                  </div>
+
                 </Link>
               </div>
             </div>
@@ -451,7 +450,7 @@ const FullDetail = (props) => {
         `}
       </style>
     </>
-  )
+  );
 }
 
 export default FullDetail

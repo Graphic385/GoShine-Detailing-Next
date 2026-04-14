@@ -2,8 +2,7 @@ import React from 'react'
 import Link from 'next/link'
 import Head from 'next/head'
 
-import Script from 'dangerous-html/react'
-import { useTranslations } from 'next-intl'
+import Script from '@/components/html-script'
 
 import Navigation from '../components/navigation'
 import Footer from '../components/footer'
@@ -399,11 +398,11 @@ const ExteriorServices = (props) => {
               detailing directly to your location.
             </p>
             <Link href="/booking">
-              <a>
-                <div className="btn exterior-services-btn-xl btn-xl btn-accent">
-                  <span>Book Exterior Service</span>
-                </div>
-              </a>
+
+              <div className="btn exterior-services-btn-xl btn-xl btn-accent">
+                <span>Book Exterior Service</span>
+              </div>
+
             </Link>
           </div>
           <div className="cta-visual-element"></div>
@@ -467,7 +466,7 @@ const ExteriorServices = (props) => {
         `}
       </style>
     </>
-  )
+  );
 }
 
 export default ExteriorServices

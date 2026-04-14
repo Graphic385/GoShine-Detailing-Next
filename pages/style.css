@@ -748,6 +748,7 @@
 .service-image {
   height: 240px;
   overflow: hidden;
+  position: relative;
 }
  
 .service-name {
@@ -792,7 +793,8 @@
   opacity: 0.9;
 }
  
-.hero-bg-media  video {
+.hero-bg-media  video,
+.hero-bg-media  img {
   top: 0;
   left: 0;
   width: 100%;

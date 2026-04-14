@@ -1,8 +1,7 @@
 import React from 'react'
 
-import Script from 'dangerous-html/react'
+import Script from '@/components/html-script'
 import PropTypes from 'prop-types'
-import { useTranslations } from 'next-intl'
 
 const BeforeAfterComparison = (props) => {
   return (
@@ -41,7 +40,7 @@ const BeforeAfterComparison = (props) => {
                 </div>
                 <div className="before-after-comparison-media">
                   <img
-                    src="wheel-before.jpg"
+                    src="/images/before-wheel.png"
                     alt="Dirty car wheel before detailing"
                     loading="lazy"
                   />
@@ -53,7 +52,7 @@ const BeforeAfterComparison = (props) => {
                 </div>
                 <div className="before-after-comparison-media">
                   <img
-                    src="wheel-after.jpg"
+                    src="/images/after-wheel.png"
                     alt="Shiny clean car wheel after detailing"
                     loading="lazy"
                   />

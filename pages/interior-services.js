@@ -2,8 +2,7 @@ import React from 'react'
 import Link from 'next/link'
 import Head from 'next/head'
 
-import Script from 'dangerous-html/react'
-import { useTranslations } from 'next-intl'
+import Script from '@/components/html-script'
 
 import Navigation from '../components/navigation'
 import Footer from '../components/footer'
@@ -382,11 +381,11 @@ const InteriorServices = (props) => {
               </p>
               <div className="booking-cta__actions">
                 <Link href="/booking">
-                  <a>
-                    <div className="btn btn-xl btn-secondary">
-                      <span>Book Interior Service</span>
-                    </div>
-                  </a>
+
+                  <div className="btn btn-xl btn-secondary">
+                    <span>Book Interior Service</span>
+                  </div>
+
                 </Link>
               </div>
             </div>
@@ -464,7 +463,7 @@ const InteriorServices = (props) => {
         `}
       </style>
     </>
-  )
+  );
 }
 
 export default InteriorServices
