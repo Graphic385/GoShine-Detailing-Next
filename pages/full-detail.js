@@ -340,7 +340,7 @@ const FullDetail = (props) => {
                   <span className="service-details__vehicle">
                     Trucks / Large SUVs / Minivans
                   </span>
-                  <span className="service-details__price">$190</span>
+                  <span className="service-details__price">$200</span>
                 </li>
               </ul>
               <p className="service-details__comparison">

@@ -4,15 +4,20 @@
   "description": "A next project generated based on a UIDL document",
   "main": "index.js",
   "scripts": {
-    "dev": "next",
     "build": "next build",
+    "dev": "next",
     "start": "next start",
     "lint": "eslint . --ext .js",
-    "check": "npm run lint && npm run build"
+    "check": "npm run lint && npm run build",
+    "preview": "opennextjs-cloudflare build && opennextjs-cloudflare preview",
+    "deploy": "opennextjs-cloudflare build && opennextjs-cloudflare deploy",
+    "upload": "opennextjs-cloudflare build && opennextjs-cloudflare upload",
+    "cf-typegen": "wrangler types --env-interface CloudflareEnv cloudflare-env.d.ts"
   },
   "author": "TeleportHQ",
   "license": "MIT",
   "dependencies": {
+    "@opennextjs/cloudflare": "^1.19.1",
     "@teleporthq/react-components": "latest",
     "next": "^16.2.3",
     "prop-types": "15.7.2",
@@ -21,7 +26,8 @@
   },
   "devDependencies": {
     "eslint": "latest",
-    "eslint-config-next": "latest"
+    "eslint-config-next": "latest",
+    "wrangler": "^4.83.0"
   },
   "engines": {
     "node": ">=18.x"
