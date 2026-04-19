@@ -4,7 +4,7 @@
   "description": "A next project generated based on a UIDL document",
   "main": "index.js",
   "scripts": {
-    "build": "next build",
+    "build": "opennextjs-cloudflare",
     "dev": "next",
     "start": "next start",
     "lint": "eslint . --ext .js",
@@ -17,7 +17,6 @@
   "author": "TeleportHQ",
   "license": "MIT",
   "dependencies": {
-    "@opennextjs/cloudflare": "^1.19.1",
     "@teleporthq/react-components": "latest",
     "next": "^16.2.3",
     "prop-types": "15.7.2",
@@ -25,6 +24,7 @@
     "react-dom": "^19.2.5"
   },
   "devDependencies": {
+    "@opennextjs/cloudflare": "^1.19.1",
     "eslint": "latest",
     "eslint-config-next": "latest",
     "wrangler": "^4.83.0"
