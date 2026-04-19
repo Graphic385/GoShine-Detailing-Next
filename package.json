@@ -28,7 +28,7 @@
     "@opennextjs/cloudflare": "^1.19.1",
     "eslint": "latest",
     "eslint-config-next": "latest",
-    "wrangler": "^3.83.0"
+    "wrangler": "^4.83.0"
   },
   "engines": {
     "node": ">=18.x"
